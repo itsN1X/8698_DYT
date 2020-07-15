@@ -1,0 +1,419 @@
+<html>
+<!--
+	Written by @itsN1X on day 8698.
+	+Released in the public domain.
+
+	To tip me or to donate , visit:
+	>"https://9xo.github.io/R/teb"<
+
+BITCOIN: 1TsNiXCQkPKaB6zfDQQXAwMBfe12ySoKa
+DOGECOIN: DFTEuCkJwX3Djh1EMT4XNK6a6NixxrMfhx
+ETH: 0xD0f79B71A8ffB7f70392630f8BFc900fcA27af42
+-->
+<head>
+<title>DoYourTip - DYT (Dynamite) | Information and Statistics</title>
+<meta name="description" content="itsN1X - DYT : Do Your Tip / DoYourTip (ERC20) Ethereum | EVM Contract : Market Capitalization , Live Price , Historical Data">
+<meta name="keywords" content="itsN1X , DYT , Do Your Tip , DoYourTip , ERC20 , Ethereum , EVM , Market Capitalization , Live , Price , Historical , Data">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset=utf-8>
+<style>
+.highlight {
+ color:#d0d0d0
+}
+.highlight table td {
+ padding:5px
+}
+.highlight table pre {
+ margin:0
+}
+.highlight .w {
+ color:#d0d0d0
+}
+.highlight .err {
+ color:#151515;
+ background-color:#ac4142
+}
+.highlight .c,.highlight .cd,.highlight .cm,.highlight .c1,.highlight .cs {
+ color:#888
+}
+.highlight .cp {
+ color:#f4bf75
+}
+.highlight .o,.highlight .ow {
+ color:#f4bf75
+}
+.highlight .p,.highlight .pi {
+ color:#d0d0d0
+}
+.highlight .gi {
+ color:#90a959
+}
+.highlight .gd {
+ color:#ac4142
+}
+.highlight .gh {
+ color:#6a9fb5;
+ font-weight:bold
+}
+.highlight .k,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kv {
+ color:#aa759f
+}
+.highlight .kc,.highlight .kt,.highlight .kd {
+ color:#d28445
+}
+.highlight .s,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .sh,.highlight .sx,.highlight .s1 {
+ color:#90a959
+}
+.highlight .sr {
+ color:#75b5aa
+}
+.highlight .si,.highlight .se {
+ color:#8f5536
+}
+.highlight .nt,.highlight .nn,.highlight .nc,.highlight .no {
+ color:#f4bf75
+}
+.highlight .na {
+ color:#6a9fb5
+}
+.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .il,.highlight .mo,.highlight .mb,.highlight .mx {
+ color:#90a959
+}
+.highlight .ss {
+ color:#90a959
+}
+body {
+ margin:0;
+ padding:0;
+ background:#151515;
+ color:#eaeaea;
+ font-size:16px;
+ line-height:1.5;
+ font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
+}
+.container {
+ width:90%;
+ max-width:1000px;
+ margin:0 auto
+}
+section {
+ display:block;
+ margin:0 0 20px 0
+}
+h1,h2,h3,h4,h5,h6 {
+ margin:0 0 20px
+}
+li {
+ line-height:1.4
+}
+header {
+ background:rgba(0,0,0,0.1);
+ width:100%;
+ border-bottom:1px dashed #b5e853;
+ padding:20px 0;
+ margin:0 0 40px 0
+}
+header h1 {
+ font-size:30px;
+ line-height:1.5;
+ margin:0 0 0 -40px;
+ font-weight:bold;
+ font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+ color:#b5e853;
+ text-shadow:0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+ letter-spacing:-1px;
+ -webkit-font-smoothing:antialiased
+}
+header h1:before {
+ content:"./ ";
+ font-size:24px
+}
+header h2 {
+ font-size:18px;
+ font-weight:300;
+ color:#666
+}
+#downloads .btn {
+ display:inline-block;
+ text-align:center;
+ margin:0
+}
+#main_content {
+ width:100%;
+ -webkit-font-smoothing:antialiased
+}
+section img {
+ max-width:100%
+}
+h1,h2,h3,h4,h5,h6 {
+ font-weight:normal;
+ font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+ color:#b5e853;
+ letter-spacing:-0.03em;
+ text-shadow:0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+ text-align:center;
+}
+dt {
+ font-style:italic;
+ font-weight:bold
+}
+blockquote {
+ color:#aaa;
+ padding-left:10px;
+ border-left:1px dotted #666
+}
+pre {
+ background:rgba(0,0,0,0.9);
+ border:1px solid rgba(255,255,255,0.15);
+ padding:10px;
+ font-size:16px;
+ color:#b5e853;
+ border-radius:2px;
+ word-wrap:normal;
+ overflow:auto;
+ overflow-y:hidden
+}
+code.highlighter-rouge {
+ background:rgba(0,0,0,0.9);
+ border:1px solid rgba(255,255,255,0.15);
+ padding:0px 3px;
+ margin:0px -3px;
+ color:#aa759f;
+ border-radius:2px
+}
+hr {
+ height:0;
+ border:0;
+ border-bottom:1px dashed #b5e853;
+ color:#b5e853
+}
+.btn {
+ display:inline-block;
+ background:-webkit-linear-gradient(top, rgba(40,40,40,0.3), rgba(35,35,35,0.3) 50%, rgba(10,10,10,0.3) 50%, rgba(0,0,0,0.3));
+ padding:8px 18px;
+ border-radius:50px;
+ border:2px solid rgba(0,0,0,0.7);
+ border-bottom:2px solid rgba(0,0,0,0.7);
+ border-top:2px solid #000;
+ color:rgba(255,255,255,0.8);
+ font-family:Helvetica, Arial, sans-serif;
+ font-weight:bold;
+ font-size:13px;
+ text-decoration:none;
+ text-shadow:0 -1px 0 rgba(0,0,0,0.75);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,0.05)
+}
+.btn:hover {
+ background:-webkit-linear-gradient(top, rgba(40,40,40,0.6), rgba(35,35,35,0.6) 50%, rgba(10,10,10,0.8) 50%, rgba(0,0,0,0.8))
+}
+.btn .icon {
+ display:inline-block;
+ width:16px;
+ height:16px;
+ margin:1px 8px 0 0;
+ float:left
+}
+a {
+ color:#63c0f5;
+ text-shadow:0 0 5px rgba(104,182,255,0.5);
+ text-decoration:none;
+}
+.cf:before,.cf:after {
+ content:"";
+ display:table
+}
+.cf:after {
+ clear:both
+}
+.cf {
+ zoom:1
+}
+header {
+ display:none
+}
+* {
+ box-sizing:border-box
+}
+::selection {
+ background:purple
+}
+::-moz-selection {
+ background:purple
+}
+</style>
+</head>
+
+
+<body id="mb">
+
+<h1 align="center">DYT</h1>
+<h5 align="center"><a href="https://etherscan.io/viewsvg?t=1&a=0x740623d2c797b7d8d1ecb98e9b4afcf99ec31e14">0x740623d2c797b7d8d1ecb98e9b4afcf99ec31e14</a><br>(ERC20 E.V.M. Contract)</h5>
+
+<svg id="svg01" viewBox="0 0 365 10" preserveAspectRatio="none" style="height:40%;width:100%">
+<polyline id="polyline-id" points="" style="fill:#f93;stroke:#00f;stroke-width:0.2" />
+</svg>
+
+<h3 align="center">D.Y.T. : Price (in Ethereum / DYT)</h3>
+<hr>
+
+<svg id="svg02" viewBox="0 0 365 300" preserveAspectRatio="none" style="height:40%;width:100%">
+<polyline id="polyline2-id" points="" style="fill:brown;stroke:gold;stroke-width:1" />
+</svg>
+
+<h3 align="center">D.Y.T. : Market Capitalization (in Ethereum)</h3>
+<hr>
+
+<svg id="svg03" viewBox="0 0 365 300" preserveAspectRatio="none" style="height:40%;width:100%">
+<polyline id="polyline3-id" points="" style="fill:#707;stroke:#0b1;stroke-width:1" />
+</svg>
+<h3 align="center">D.Y.T. : Circulating Supply</h3>
+<script>
+MB=document.getElementById('mb');
+//source = "arch/20200715CG.json";
+source = "https://api.coingecko.com/api/v3/coins/dynamite/market_chart?vs_currency=eth&days=max";
+r1=new XMLHttpRequest();
+r1.open("GET", source, true);
+r1.onload = function(){var woo=JSON.parse(this.response);doo(woo)};
+r1.send();
+
+
+
+
+
+function pg(p)
+{
+	var svg1 = document.getElementById('svg01');
+	var polyline1= document.getElementById('polyline-id');
+
+	var point0 = svg1.createSVGPoint();
+	point0.x = 0;
+	point0.y = 10;
+	polyline1.points.appendItem(point0);
+	
+	p.prices.forEach
+	(sm =>
+		{
+//		var dyte = new Date(sm[0]).toISOString();
+//		me = sm[1] + " @ " + dyte +"\n";
+//		MB.append(me);
+
+//	const breaker = document.createElement("br");
+//		MB.appendChild(breaker);
+
+
+
+		var point1 = svg1.createSVGPoint();
+		point1.x = (sm[0]-1563148800000)/864e5;
+		point1.y = 10*(1-sm[1]*1000);
+
+		polyline1.points.appendItem(point1);
+
+		}
+	)
+	var point00 = svg1.createSVGPoint();
+	point00.x = 365;
+	point00.y = 10;
+	polyline1.points.appendItem(point00);
+
+}
+function mg(p)
+{
+	var svg2 = document.getElementById('svg02');
+	var polyline2= document.getElementById('polyline2-id');
+
+	var point0 = svg2.createSVGPoint();
+	point0.x = 0;
+	point0.y = 300;
+	polyline2.points.appendItem(point0);
+	
+	p.market_caps.forEach
+	(sm =>
+		{
+//		var dyte = new Date(sm[0]).toISOString();
+//		me = sm[1] + " @ " + dyte +"\n";
+//		MB.append(me);
+
+//	const breaker = document.createElement("br");
+//		MB.appendChild(breaker);
+
+
+
+		var point1 = svg2.createSVGPoint();
+		point1.x = (sm[0]-1563148800000)/864e5;
+		point1.y = 300-sm[1];
+
+		polyline2.points.appendItem(point1);
+
+		}
+	)
+	var point00 = svg2.createSVGPoint();
+	point00.x = 365;
+	point00.y = 300;
+	polyline2.points.appendItem(point00);
+
+}
+function cg(p)
+{
+	var svg3 = document.getElementById('svg03');
+	var polyline3= document.getElementById('polyline3-id');
+
+	var point30 = svg3.createSVGPoint();
+	point30.x = 0;
+	point30.y = 300;
+	polyline3.points.appendItem(point30);
+	
+
+for ( i=0; i<p.prices.length; i++)
+{
+
+const breaker = document.createElement("br");
+num1 = p.prices[i][1];
+num2 = p.market_caps[i][1];
+ts=p.prices[i][0];
+ns=num2/num1;
+//memo =  (ts-1563148800000)/864e5 +" , "+ns/1e4; 
+//MB.append(memo);
+//MB.appendChild(breaker);
+
+		var point3 = svg3.createSVGPoint();
+		point3.x = (ts-1563148800000)/864e5;
+		point3.y = ns/5e4;
+
+		polyline3.points.appendItem(point3);
+
+}
+
+	var point300 = svg3.createSVGPoint();
+	point300.x = 365;
+	point300.y = 300;
+	polyline3.points.appendItem(point300);
+
+
+}
+function doo(p)
+{
+	pg(p);
+	mg(p);
+	cg(p);
+}
+</script>
+<hr>
+
+<h2>ℹ</h2>
+<div align="center">
+DoYourTip (D.Y.T.) is a deflationary token.<br>
+With each on-chain transaction, 2% of the transferred amount gets burned!<br><br>
+You are viewing the <b>Live</b> Edition.<br>
+<pre><a href="index.html">Switch to <b>Archive</b> version</a></pre>
+</div>
+
+
+</body>
+<hr><hr><hr><hr>
+<h3>Thank Ü for ya time!</h3>
+<h5>> special thanks to the <a href="https://t.me/doyourtip">Telegram</a> admins</h5>
+<div align=center>$ETH :: 0xD0f79B71A8ffB7f70392630f8BFc900fcA27af42</div>
+<h5>Do visit <b><a href="https://9xo.github.io/R/teb">9xo/R</a></b> to giveaway kind♥</h5>
+<div align=center><font size=1><b>About:<a href="https://google.com/search?q=itsN1X">CREA10R</a> | Github:<a href="https://github.com/itsN1X">@itsN1X</a> :: twitter:<a href="https://twitter.com/itsN1X">@itsN1X</a></b></font></div>
+<hr><hr><hr><hr>
+</html>
